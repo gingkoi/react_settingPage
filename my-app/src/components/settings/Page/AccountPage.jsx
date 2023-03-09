@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AccountPage() {
   return (
-    <div className="px-32 py-10 grow bg-[#f8fafc] border tab-content tab-space">
+    <div className="px-32 py-10 grow bg-[#f8fafc] border tab-content tab-space font-poppin">
       <div className="" id="account">
         <h1 className="text-4xl font-bold">Account</h1>
         <div className="my-3">
@@ -19,7 +19,7 @@ export default function AccountPage() {
               type="text"
               name=""
               id=""
-              className="border rounded-lg h-12 w-[400px]"
+              className="border rounded-lg h-12 w-[400px] px-5"
             />
           </div>
           <div>
@@ -28,7 +28,7 @@ export default function AccountPage() {
               type="text"
               name=""
               id=""
-              className="border rounded-lg h-12 w-[400px]"
+              className="border rounded-lg h-12 w-[400px] px-5"
             />
           </div>
         </div>
@@ -39,7 +39,10 @@ export default function AccountPage() {
             <div className="bg-[#f8fafc] py-2 px-5 border h-12 flex items-center rounded-l-lg text-[#8e9bac]">
               workcation.com/
             </div>
-            <input type="text" className="border rounded-r-lg h-12 w-[400px]" />
+            <input
+              type="text"
+              className="border rounded-r-lg h-12 w-[400px] px-3"
+            />
           </div>
         </div>
         <div className="my-3">
@@ -61,7 +64,14 @@ export default function AccountPage() {
         </div>
         <div>
           <h3>About</h3>
-          <input type="text" className="h-28 w-[85%] mt-1 border" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            className="border py-2 px-2 w-[80%] mt-1"
+            placeholder="Tell us more about yourself"
+          ></textarea>
           <p className="text-[#8e9bac] mt-2">
             Brief description for your profile.
           </p>
@@ -80,14 +90,14 @@ export default function AccountPage() {
                 <h3>Email</h3>
                 <input
                   type="text"
-                  className="border rounded-lg h-12 w-[400px]"
+                  className="border rounded-lg h-12 w-[400px] px-3"
                 />
               </div>
               <div>
                 <h3>Country</h3>
                 <input
                   type="text"
-                  className="border rounded-lg h-12 w-[400px]"
+                  className="border rounded-lg h-12 w-[400px] px-3"
                 />
               </div>
             </div>
@@ -96,14 +106,14 @@ export default function AccountPage() {
                 <h3>Phone number</h3>
                 <input
                   type="text"
-                  className="border rounded-lg h-12 w-[400px]"
+                  className="border rounded-lg h-12 w-[400px] px-3"
                 />
               </div>
               <div>
                 <h3>Language</h3>
                 <input
                   type="text"
-                  className="border rounded-lg h-12 w-[400px]"
+                  className="border rounded-lg h-12 w-[400px] px-3"
                 />
               </div>
             </div>
@@ -113,7 +123,7 @@ export default function AccountPage() {
           </p>
           <div className="bg-neutral-200 h-[1px] my-5"></div>
           <div className="flex justify-end space-x-3 py-2">
-            <button className="bg-white py-2 px-5 border rounded-lg hover:opacity-80">
+            <button className="bg-white py-2 px-5 border rounded-lg hover:bg-red-500 hover:text-white">
               Cancel
             </button>
             <button className="bg-[#2665eb] text-white py-2 px-5 border rounded-lg hover:opacity-80">

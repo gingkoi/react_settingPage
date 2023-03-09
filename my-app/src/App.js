@@ -8,6 +8,9 @@ import { Route, Routes } from "react-router-dom";
 import AccountPage from "./components/settings/Page/AccountPage";
 import Account from "./components/settings/Account";
 import NotificationPage from "./components/settings/Page/NotificationPage";
+import SecurityPage from "./components/settings/Page/SecurityPage";
+import AppearancePage from "./components/settings/Page/AppearancePage";
+import BillingPage from "./components/settings/Page/BillingPage";
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
         <Routes>
           <Route path="/account" element={<AccountPage />} />
           <Route path="/notification" element={<NotificationPage />} />
+          <Route path="/security" element={<SecurityPage />} />
+          <Route path="/appearance" element={<AppearancePage />} />
+          <Route path="/billing" element={<BillingPage />} />
         </Routes>
       </div>
     </div>
